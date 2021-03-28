@@ -1,0 +1,4 @@
+Arithmetic mean of the affinity energy in Kcal/mol: -6.879069767441861
+Most common energy value: -6.4
+Median of energies: -6.7
+Variance of energies: 0.8633214774281806

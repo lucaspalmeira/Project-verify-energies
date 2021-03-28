@@ -1,0 +1,30 @@
+REMARK  Name = CHEMBL170549
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   LIG    1       -0.017   1.373   0.010  0.00  0.00    +0.150 A 
+ATOM      2  C   LIG    1        1.185   2.088   0.002  0.00  0.00    -0.122 A 
+ATOM      3  C   LIG    1        2.404   1.402  -0.013  0.00  0.00    +0.113 A 
+ATOM      4  C   LIG    1        2.414   0.021  -0.021  0.00  0.00    +0.064 A 
+ATOM      5  C   LIG    1        1.212  -0.686  -0.013  0.00  0.00    +0.137 A 
+ATOM      6  C   LIG    1        0.002  -0.004   0.002  0.00  0.00    -0.081 A 
+ENDROOT
+BRANCH   2   7
+ATOM      7  C   LIG    1        1.168   3.561   0.009  0.00  0.00    +0.524 C 
+ATOM      8  O   LIG    1        2.220   4.185   0.003  0.00  0.00    -0.672 OA
+ATOM      9  O   LIG    1        0.101   4.160   0.022  0.00  0.00    -0.669 OA
+ENDBRANCH   2   7
+BRANCH   6  10
+ATOM     10  N   LIG    1       -1.271  -0.760   0.010  0.00  0.00    +0.044 N 
+ATOM     11  O   LIG    1       -1.256  -1.969   0.004  0.00  0.00    -0.154 OA
+ATOM     12  O   LIG    1       -2.325  -0.168   0.023  0.00  0.00    -0.171 OA
+ENDBRANCH   6  10
+BRANCH   4  13
+ATOM     13  O   LIG    1        3.597  -0.650  -0.036  0.00  0.00    -0.477 OA
+ATOM     14  H   LIG    1        3.948  -0.849   0.843  0.00  0.00    +0.387 HD
+ENDBRANCH   4  13
+BRANCH   5  15
+ATOM     15  O   LIG    1        1.225  -2.043  -0.021  0.00  0.00    -0.465 OA
+ATOM     16  H   LIG    1        1.237  -2.441   0.860  0.00  0.00    +0.393 HD
+ENDBRANCH   5  15
+TORSDOF 4
