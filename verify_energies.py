@@ -10,22 +10,35 @@ def main():
 
 	file_pdbqt = glob.glob('*/*.pdbqt')
 	file_log = glob.glob('*/*.txt')
+	error_log = []
+	error_out = []
 	energies = []
-	path = []
-	CID = []
 
 	for log in file_log:
-		with open(log, 'r') as reading:
-			line = reading.readlines()[25].rstrip()
-			energy_affinity = line[12:17]
-		energies.append(energy_affinity)
+		reading_log = open(log)
+		lines_log = reading_log.readlines()
+		reading_log.close()
+		try:
+			line_27 = lines_log[25].rstrip()
+			energy_affinity = line_27[12:17]
+			energies.append(energy_affinity)
+		except:
+			error_log.append(log)
+
+	CID = []
+	path = []
 
 	for pdbqt in file_pdbqt:
-		with open(pdbqt, 'r') as out:
-			line_3 = out.readlines()[2].rstrip()
-			name_CID = line_3[8:].rstrip()
-		path.append(pdbqt)
-		CID.append(name_CID)
+		reading_out = open(pdbqt)
+		lines_out = reading_out.readlines()
+		reading_out.close()
+		try:
+			line_3 = lines_out[2].rstrip()
+			name_CID = line_3[8:]
+			CID.append(name_CID)
+			path.append(pdbqt)
+		except:
+			error_out.append(pdbqt)
 
 	new_energies = []
 
@@ -66,4 +79,3 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
